@@ -1,4 +1,3 @@
-<!-- index.html -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,10 +12,8 @@
 
 <body>
     <section class="game">
-        <!--Title -->
         <div class="title">Rock Paper Scissor</div>
 
-        <!--Display Score of player and computer -->
         <div class="score">
             <div class="playerScore">
                 <h2>Player</h2>
@@ -32,20 +29,16 @@
 
         <div class="move">Choose your move</div>
 
-        <!--Number of moves left before game ends -->
         <div class="movesleft">Moves Left: 10 </div>
 
-        <!--Options available to player to play game -->
         <div class="options">
             <button class="rock"><img src="rock.png" /><h1>Rock</h1> </button>
             <button class="paper"><img src="paper.png" /><h1>Paper</h1></button>
             <button class="scissor"><img src="scissor.png" /><h1>Scissors</h1></button>
         </div>
 
-        <!--Final result of game -->
         <div class="result"></div>
 
-        <!--Reload the game -->
         <button class="reload"></button>
 
     </section>
@@ -55,17 +48,16 @@
 
 </html>
 <style>
-    /* styles.css */
-    /* universal selector - Applies to whole document */
-    *{
+     *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: #082c6c;
+    background: #159895;
     color: #fff;
     }
-    /* To center everything in game */
     .game{
+                background: none;
+
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -74,16 +66,16 @@
     align-items: center;
     }
     
-    /* Title of the game */
     .title{
+        background: none;
     position: absolute;
     top: 0;
     font-size: 4rem;
     z-index: 2;
     }
     
-    /* Score Board */
     .score{
+                background: none;
     display: flex;
     width: 30vw;
     justify-content: space-evenly;
@@ -92,25 +84,26 @@
     z-index: 1;
     }
     
-    /* Score  */
     .p-count,.c-count{
+                background: none;
+
     text-align: center;
     font-size: 1.5rem;
     margin-top: 1rem;
     }
     
-    /* displaying three buttons in one line */
     .options{
+    background: none;
     display: flex;
     width: 50vw;
     justify-content: space-evenly;
     margin-top: 2rem;
     }
     
-    /* Styling on all three buttons */
     .rock, .paper, .scissor{
+    background: none;
         padding-left: 0;
-    padding: 8em 10em 8em ;
+    padding: 4em 10em 8em ;
     border-radius: 10px;
     outline: none;
     border-color: green;
@@ -119,13 +112,15 @@
     text-align: center;
     }
     
-    .move{
+    .move{        background: none;
+
     font-size: 2rem;
     font-weight: bold;
     }
     
-    /* Reload button style */
     .reload {
+                background: none;
+
     display: none;
     margin-top: 2rem;
     padding: 1rem;
@@ -141,19 +136,19 @@
     font-size: 1.2rem;
     }
     
+    .computerscore{
+                background: none;
 
+    }
 </style>
 <script>
-    // app.js
     
-    // Complete logic of game inside this function
     const game = () => {
     let playerScore = 0;
     let computerScore = 0;
     let moves = 0;
     
     
-    // Function to 
     const playGame = () => {
         const rockBtn = document.querySelector('.rock');
         const paperBtn = document.querySelector('.paper');
