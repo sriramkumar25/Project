@@ -9,7 +9,7 @@ body{
     display: flex;
 }
 .container{
-    margin:10em 15em 15em 12em;
+    margin:10em 5em 15em 5em;
     padding: 0 ;
     transition: 0.25s;
 }
@@ -22,7 +22,7 @@ img{
 
 }
 .container1{
-    margin:10em 15em;
+    margin:10em 5em;
     padding: 0 ;
     transition: 0.25s;
 }
@@ -34,3 +34,17 @@ img{
     transform: translateY(-15px);
 
 }
+.container2{
+    margin:10em 5em;
+    padding: 0 ;
+    transition: 0.25s;
+}
+img{
+    padding: 1em 1em 0 1em;
+    margin-bottom: 0;
+}
+.container2:hover{
+    transform: translateY(-15px);
+
+}
+
