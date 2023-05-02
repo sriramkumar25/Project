@@ -9,7 +9,7 @@ body{
     display: flex;
 }
 .container{
-    margin:10em 5em 15em 5em;
+    margin:10em 5em ;
     padding: 0 ;
     transition: 0.25s;
 }
